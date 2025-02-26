@@ -186,14 +186,17 @@ def build_bart(vocab_size:int,seq_len:int,d_model:int=512,N:int=6,h:int=8,dropou
 			nn.init.xavier_uniform_(p)
 	return bart
 
-
+def get_n_params(model):
+    pp=0
+    for p in list(model.parameters()):
+        nn=1
+        for s in list(p.size()):
+            nn = nn*s
+        pp += nn
+    return pp
 
 if __name__=='__main__':
 	bart = build_bart(32000,100)
 	print("Model Loaded")
-
-	ip = torch.randint(1,31000,(1,100))
-	a = bart.encode(ip,None)
-	print(a.shape)
-	b = bart.project(a)
-	print(b.shape)
+	total_parameters = get_n_params(bart)
+	print(f'Total Parametes : {total_parameters/1e9:.2f} Billion ({total_parameters/1e6:.2f} Million)')
