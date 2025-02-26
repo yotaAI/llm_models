@@ -132,7 +132,7 @@ class EncoderBlock(nn.Module):
 
 	def forward(self,x,src_mask):
 		x = self.residual_connections[0](x, lambda x: self.self_attention_block(x,x,x,src_mask))
-		x = self.residual_connections[0](x, lambda x: self.feed_forward_block(x))
+		x = self.residual_connections[1](x, lambda x: self.feed_forward_block(x))
 		return x
 
 class Encoder(nn.Module):
