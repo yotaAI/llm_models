@@ -1,0 +1,16 @@
+Name,HF Pth,Max Sequence,Dataset Sequence,Winrate,HumanEval-pthon,java,javascript,cpp
+CodeQwen1.5-7B,Qwen/CodeQwen1.5-7B,65536,,45.17,50.79,42.15,50.07,48.35
+Qwen2.5-Coder-32B,Qwen/Qwen2.5-Coder-32B,32768,,56.67,57.1,65.49,65.07,64.35
+CodeLlama-70b,codellama/CodeLlama-70b-hf,16384,,43.21,52.44,44.72,56.52,49.69
+DeepSeek-Coder-33b-base,deepseek-ai/deepseek-coder-33b-base,16384,,42.75,52.45,43.77,51.28,51.22
+StarCoder2-15B,bigcode/starcoder2-15b,16384,,39.92,44.15,33.86,44.24,41.44
+DeepSeek-Coder-7b-base,deepseek-ai/deepseek-coder-6.7b-base,16384,,38.33,45.83,37.72,45.9,45.53
+CodeLlama-34b,codellama/CodeLlama-34b-hf,16384,,37.81,45.11,40.19,41.66,41.42
+CodeLlama-34b-Python,codellama/CodeLlama-34b-Python-hf,16384,,36.96,53.29,39.46,44.72,39.09
+CodeLlama-13b,codellama/CodeLlama-13b-hf,16384,,32.27,35.07,32.23,38.26,35.81
+CodeLlama-13b-Python,codellama/CodeLlama-13b-Python-hf,16384,,30.19,42.89,33.56,40.66,36.21
+CodeLlama-7b-Python,codellama/CodeLlama-7b-Python-hf,16384,,25.08,40.48,29.15,36.34,30.34
+CodeGemma-7B,google/codegemma-7b,8192,,33.83,40.13,35.03,43.06,40.34
+CodeLlama-70b-Python,codellama/CodeLlama-70b-Python-hf,4096,,42.33,55.49,45.96,56.52,49.69
+Phi-1,microsoft/phi-1,2048,,6.92,51.22,10.76,19.25,14.29
+Falcon-180B,tiiuae/falcon-180B,,,24.2,35.37,28.48,31.68,28.57
